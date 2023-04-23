@@ -1,0 +1,14 @@
+
+class Solution {
+    int MissingNumber(int array[], int n) {
+        int sum=0;
+        for(int i=0;i<array.length;i++){
+            sum=sum+array[i];
+        }
+        int k=array.length+1;
+        int es=k*(k+1)/2;
+        return es-sum;
+           
+    }
+    
+}
